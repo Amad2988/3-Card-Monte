@@ -98,7 +98,7 @@ function shuffleArray(){
 
 // let cardArray = cardArray.forEach(element => element = Math.floor(Math.random() * cardArray.length))
 
-// return cardArray
+// return newCard
  
 //This function will not swap card order it will only change the image in place.
 // function shuffle(){
