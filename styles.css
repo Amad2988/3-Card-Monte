@@ -1,0 +1,268 @@
+.center {
+  display: block;
+  margin-left: -100px;
+  margin-right: 100px;
+
+}
+
+.left {
+  display: block;
+  margin-left: -600px;
+  margin-top: -350px;
+  margin-right: auto
+}
+
+.right {
+  display: block;
+  margin-right: auto;
+  margin-left: 400px;
+  margin-top: -700px;
+}
+
+.h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 250%;
+  color: white;
+  text-align: center;
+}
+
+.heading {
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading img {
+  margin: 10px;
+}
+
+.btn {
+  display: block;
+  margin-left: 710px;
+  margin-right: auto;
+ 
+}
+
+#play-game {
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  color: rgb(255, 251, 43);
+  background-color: rgb(0, 0, 0);
+  font-weight: 300;
+  outline-style: solid;
+  outline-color: rgb(238, 216, 16);
+  outline-width: 2px;
+}
+
+#shuffle-cards {
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  color: rgb(255, 251, 43);
+  background-color: rgb(0, 0, 0);
+  font-weight: 300;
+  outline-style: solid;
+  outline-color: rgb(238, 216, 16);
+  outline-width: 2px;
+}
+
+#randomizer {
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  color: rgb(255, 251, 43);
+  background-color: rgb(0, 0, 0);
+  font-weight: 300;
+  outline-style: solid;
+  outline-color: rgb(238, 216, 16);
+  outline-width: 2px;
+}
+
+
+
+.modal-content {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+  color: white;
+  font-weight: 200;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 570px;
+  top: 200px;
+  width: 40%;
+  /* Full width */
+  height: 50%;
+  /* Full height */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black w/ opacity */
+  border: 100px;
+  border-radius: 20px;
+  padding: 30px, 50px;
+  outline-style: solid;
+  outline-color: rgb(238, 216, 16);
+  outline-width: 5px;
+}
+
+#okButton {
+  display: block;
+  align-items: center;
+  margin-left: 350px;
+  margin-top: 25px;
+  height: 30px;
+  width: 70px;
+  color: rgb(0, 0, 0);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  perspective: 8000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flip-card-inner-2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flip-card-inner-3 {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  transition: all 0.8s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s ease;
+  animation-play-state: paused;  
+}
+
+.child-slide {
+  animation: left-to-right 1s ease-in forwards 4 alternate 2s;
+  animation-play-state: running;
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(167%);
+  }
+
+  0% {
+    transform: translateX(0);
+  }
+}
+
+.child-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s ease;
+  animation-play-state: paused;
+}
+
+.child-2-slide {
+  animation: right-to-left 1s ease-in forwards 2 alternate 4s;
+  animation-play-state: running;
+}
+
+@keyframes right-to-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-167%);
+  }
+
+  0% {
+    transform: translateX(0);
+  }
+}
+
+.child-3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s ease;
+  animation-play-state: paused;  
+}
+
+.child-3-slide {
+  animation: left-to-right 1s ease-in forwards 4 alternate 3s;
+  animation-play-state: running;
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(167%);
+  }
+
+  0% {
+    transform: translateX(0);
+  }
+}
