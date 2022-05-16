@@ -13,10 +13,6 @@ playButton.addEventListener('click', function () {
 const childPlayButton = document.getElementById('child')
 console.log(childPlayButton)
 
- function shuffel(){
-    if(child.classList.contains('play'))
-    child.classList.add('play')
-     
 }  
 
 close.addEventListener('click', () => {
