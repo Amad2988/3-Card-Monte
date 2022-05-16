@@ -10,7 +10,7 @@
   my wireframe layout. Then I set up my CSS and then I went into Javascript and started writing my functions.
 # Unsolved Problems
   Currently two unsolved problems. 
-    - The first problem is I can't shuffle the array of images randomly. 
-    - The second problem is I wasn't able to replay the game after a win/loss state.
+     The first problem is I can't shuffle the array of images randomly. 
+     The second problem is I wasn't able to replay the game after a win/loss state.
 # Link to Hosted site: https://amad2988.github.io/3-Card-Monte/
 # Installation Instructions
